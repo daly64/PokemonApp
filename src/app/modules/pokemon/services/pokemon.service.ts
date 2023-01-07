@@ -14,7 +14,7 @@ export class PokemonService {
     }
 
     getPokemonTypeList(): string[] {
-        return ['plante', 'feu', 'eau', 'insecte', 'normal', 'electrik', 'poison', 'fee', 'vol', 'combat', 'psy']
+        return ['Plante', 'Feu', 'Eau', 'Insecte', 'tormal', 'Electrik', 'Poison', 'Fee', 'Vol', 'Combat', 'Psy']
     }
 
 

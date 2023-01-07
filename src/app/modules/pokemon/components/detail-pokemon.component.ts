@@ -46,6 +46,7 @@ import {PokemonService} from "../services/pokemon.service";
                         </div>
                         <div class="card-action">
                             <a class="waves-effect waves-orange btn-flat" (click)="goBack()">Retour</a>
+                            <a class="waves-effect waves-orange btn-flat" (click)="goEdit()">Edit</a>
 
                         </div>
                     </div>
@@ -75,5 +76,10 @@ export class DetailPokemonComponent implements OnInit {
 
     goBack() {
         this.router.navigate([`pokemons`])
+    }
+
+    goEdit() {
+        this.router.navigate([`edit/pokemon/`,this.pokemon?.id])
+
     }
 }
